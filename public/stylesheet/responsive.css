@@ -1,3 +1,16 @@
+/* RESET + Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  overflow-x: hidden; /* Kill horizontal scroll */
+  font-family: sans-serif; /* Set default font */
+}
+
 /* Mobile Devices (≤ 600px) */
 @media (max-width: 600px) {
   main {
@@ -6,58 +19,89 @@
 
   .header-item {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 10px 15px;
-    margin-bottom: -20px;
+    margin-bottom: 20px;
+  }
+
+  .hero-section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 15px;
   }
 
   .hero-flex {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
   .hero-title {
-    font-size: 50px;
-    line-height: 68px;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    padding: 0px 20px;
   }
 
   .hero-subtitle {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 0px 40px;
   }
-  .hero-btn{
+  .about-title{
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+  .hero-btn {
     display: flex;
     justify-content: center;
-    padding: 15px 0px;
+    padding: 15px 0;
   }
 
   .intro-video {
     display: none;
-    padding: 10px;
   }
-  .about-section{
-    padding: 0px 10px;
+
+  .about-section {
+    padding: 0 10px;
+  }
+
+  .mission-card-title,
+  .vision-card-title {
+    margin-bottom: 6px;
   }
   .about-card-container {
+    display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  .sideLine{
+.work-title{
+  margin-bottom: 20px;
+}
+  .sideLine {
     display: none;
   }
+
   .flex {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-  .flex>ul{
-    position: relative;
-    left: -10;
-  }
+
+ .flex>ul>li {
+  list-style: none;
+}
 
   .card-container {
+    display: grid;
     grid-template-columns: 1fr;
   }
 
   .flex-provide-container {
+    display: flex;
     flex-direction: column;
     padding: 20px;
     gap: 20px;
@@ -74,7 +118,6 @@
 
   .image-container {
     display: none;
-    flex-direction: column;
   }
 
   .image-container img {
@@ -83,8 +126,10 @@
   }
 
   .right-image-container {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 4%;
   }
 
   .right-image-container img {
@@ -92,25 +137,26 @@
     height: auto;
   }
 
-
-  .event-modal{
+  .event-modal {
     width: 100%;
   }
-  .event-modal-content{
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+
+  .event-modal-content {
+    margin: 8rem 0;
   }
-  .modal-flex{
+
+  .modal-flex {
+    display: flex;
     flex-direction: column;
   }
-  .modal-flex img{
+
+  .modal-flex img {
     max-width: 350px;
     height: 250px;
   }
-  .left-container{
-    display: none;
-  }
-  .form-header{
+
+  .left-container,
+  .form-header {
     display: none;
   }
 }
@@ -160,6 +206,3 @@
     height: auto;
   }
 }
-
-/* Desktops (≥ 992px) */
-/* Already handled by default styles */
