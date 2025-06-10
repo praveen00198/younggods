@@ -439,7 +439,7 @@ header {
 }
 
 .modal-flex img {
-  width: 250px !important;
+  width: 280px !important;
   border-radius: 20px;
   object-fit: cover;
 }
@@ -842,7 +842,7 @@ label {
   padding: 1rem 1.5rem;
   background-color: #1c1c1c6e;
   color: #fff;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 1.1rem;
   font-weight: 500;
   text-align: left;

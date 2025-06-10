@@ -1,18 +1,22 @@
-/* RESET + Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body, html {
-  width: 100%;
-  overflow-x: hidden; /* Kill horizontal scroll */
-  font-family: sans-serif; /* Set default font */
-}
+/* RESET + Base Styles *
 
 /* Mobile Devices (≤ 600px) */
 @media (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body,
+  html {
+    width: 100%;
+    overflow-x: hidden;
+    /* Kill horizontal scroll */
+    font-family: sans-serif;
+    /* Set default font */
+  }
+
   main {
     padding: 10px;
   }
@@ -51,10 +55,12 @@ body, html {
     line-height: 1.5;
     padding: 0px 40px;
   }
-  .about-title{
+
+  .about-title {
     line-height: 35px;
     margin-bottom: 20px;
   }
+
   .hero-btn {
     display: flex;
     justify-content: center;
@@ -73,14 +79,17 @@ body, html {
   .vision-card-title {
     margin-bottom: 6px;
   }
+
   .about-card-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-.work-title{
-  margin-bottom: 20px;
-}
+
+  .work-title {
+    margin-bottom: 20px;
+  }
+
   .sideLine {
     display: none;
   }
@@ -91,9 +100,9 @@ body, html {
     align-items: flex-start;
   }
 
- .flex>ul>li {
-  list-style: none;
-}
+  .flex>ul>li {
+    list-style: none;
+  }
 
   .card-container {
     display: grid;
@@ -116,6 +125,9 @@ body, html {
     font-size: 16px;
   }
 
+  .game-categories{
+    font-size: 0.7rem;
+  }
   .image-container {
     display: none;
   }
@@ -150,11 +162,63 @@ body, html {
     flex-direction: column;
   }
 
-  .modal-flex img {
-    max-width: 350px;
-    height: 250px;
+  #modalCountdown {
+    gap: 5px;
+    margin: 10px 0px;
   }
 
+  #modalCountdown span {
+    padding: 4px 25px;
+  }
+
+  .pricing-title {
+    font-size: 1rem;
+    margin: 5px 0px;
+  }
+
+  #modalTitle {
+    font-size: 1.3rem;
+  }
+
+  .modal-flex img {
+    width: 100%;
+    max-width: 270px;
+    height: 270px;
+  }
+
+  .modal-info ul li {
+    font: 400 0.6rem 'Nunito';
+  }
+
+  #priceIndividual,
+  #priceTeam {
+    font: 700 1rem 'Nunito';
+  }
+
+  .prize-details-title {
+    font: 600 1rem 'Poppins';
+    color: #002510;
+    margin-top: 15px;
+    margin-bottom: 2px;
+  }
+
+  #modalPrize {
+    font: 400 0.7rem 'Nunito';
+    color: #011308;
+    margin-bottom: 10px;
+
+  }
+  .event-description{
+    margin-bottom: 15px;
+  }
+  .event-date{
+    font: 400 0.7rem 'Nunito';
+  }
+
+  .section-container {
+  background: radial-gradient(circle at top left, #ecf8f313, #002510);
+  padding: 20px;
+}
   .left-container,
   .form-header {
     display: none;
