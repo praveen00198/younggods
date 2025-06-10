@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="YoungGod - An elite eSports platform for gamers to register, compete, and win." />
+  <meta name="keywords" content="eSports, gaming, tournaments, register, Free Fire, Battlegrounds Mobile" />
+
+  <title>YoungGod : An E-Sports</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="public/stylesheet/responsive.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+  <main>
+
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <ul class="header-item">
+          <li class="header-items"><a href="#">Home</a></li>
+          <li class="header-items"><a href="#about">About Us</a></li>
+          <li class="header-items"><a href="#registration">Register</a></li>
+          <li class="header-items"><a href="#faq">FAQs</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-flex">
+        <div class="hero-content">
+          <p class="hero-title">Young God's an e-Sports</p>
+          <p class="hero-subtitle">
+            Compete, Conquer, and Rise Among the Elite!
+          </p>
+          <div class="hero-btn">
+            <button type="button" onclick="handleForm()" class="primary-btn">
+              Register Now...
+            </button>
+            <button type="button" class="secondary-btn">Know More</button>
+          </div>
+        </div>
+
+        <div class="intro-video">
+          <!-- <video src="/public/images/intro-video.mp4" autoplay muted loop playsinline class="your-custom-classes">
+            Your browser does not support the video tag.
+          </video> -->
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <p class="about-title">
+        <i class="bx bx-spreadsheet bx-md"></i>About YoungGod's
+      </p>
+      <p class="about-description">
+        At YoungGod we provide a platform where you can unleash your gaming
+        talent and compete with others, show your gaming moves and chase glory
+        in the world of competitive gaming. Join the ultimate eSports platform
+        where you can register, build your team, and battle in thrilling
+        tournaments.
+      </p>
+
+      <div class="about-card-container">
+        <div class="mission-cards">
+          <p class="mission-card-title">Our mission</p>
+          <p class="mission-card-description">
+            Empowering gamers to connect, compete, and showcase talents in
+            eSports through an inclusive platform for team building,
+            tournaments, and growth, fostering fair play, community
+            engagement, and opportunities for players of all skill levels.
+          </p>
+        </div>
+
+        <div class="vision-cards">
+          <p class="vision-card-title">Our vision</p>
+          <p class="vision-card-description">
+            To be a global eSports leader, uniting gamers across boundaries to
+            form teams, rivalries, and future champions. We aim to nurture a
+            vibrant ecosystem with competitive integrity, innovation, and a
+            strong sense of belonging.
+          </p>
+        </div>
+      </div>
+
+      <div class="work">
+        <p class="work-title">What we do? At Young God's</p>
+        <div class="flex">
+          <div class="sideLine"></div>
+          <ul>
+            <li>
+              <strong>Register and Compete:</strong> Players can sign up,
+              receive a unique ID, and participate in competitive eSports
+              tournaments.
+            </li>
+            <li>
+              <strong>Team Building:</strong> We enable users to register
+              their teams, invite teammates, and manage their squads for
+              various tournaments.
+            </li>
+            <li>
+              <strong>Tournament Access:</strong> Players can view upcoming,
+              ongoing, and past tournaments, register their teams, and stay
+              updated on match schedules.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Provide Section -->
+    <section class="provide-section">
+      <p class="provide-title">
+        <i class="bx bx-map-pin bx-lg"></i>What we provide at Young God's
+      </p>
+
+      <div class="game-card">
+        <div class="flex-provide-container">
+          <div class="game-details-container">
+            <!-- Game category -->
+            <div class="game-category">
+              <span class="game-categories">Battle Royale</span>
+              <span class="game-categories">Multiplayer</span>
+              <span class="game-categories">Action</span>
+            </div>
+            <!-- Game title -->
+            <div class="game-title">Battlegrounds Mobile India</div>
+            <!-- Game description -->
+            <div class="game-description">
+              Tactical battle royale for Indian gamers. Join the fight,
+              strategize, and emerge victorious in this thrilling mobile game.
+            </div>
+            <!-- Game button -->
+            <button class="game-btn">View Events</button>
+          </div>
+          <div class="image-container">
+            <img src="public/images/BGMI(6).png" alt="Battlegrounds Mobile India" />
+            <div class="right-image-container">
+              <img src="public/images/BGMI(3).jpg" alt="Battlegrounds Mobile India" />
+              <img src="public/images/BGMI(5).jpg" alt="Battlegrounds Mobile India" />
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-provide-container">
+          <div class="image-container">
+            <div class="right-image-container">
+              <img src="public/images/GarenaFF(1).jpg" alt="Battlegrounds Mobile India" />
+              <img src="public/images/GarenaFF(2).jpg" alt="Battlegrounds Mobile India" />
+            </div>
+            <img src="public/images/GarenaFF.png" alt="Battlegrounds Mobile India" />
+          </div>
+          <div class="game-details-container">
+            <!-- Game category -->
+            <div class="game-category">
+              <span class="game-categories">Shooter</span>
+              <span class="game-categories">Multiplayer</span>
+              <span class="game-categories">Action</span>
+            </div>
+            <!-- Game title -->
+            <div class="game-title">Garena Free Fire</div>
+            <!-- Game description -->
+            <div class="game-description">
+              Fast-paced survival shooter for Indian gamers. Join the fight,
+              strategize, and emerge victorious in this thrilling mobile game.
+            </div>
+            <!-- Game button -->
+            <button class="game-btn">View Events</button>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="card-container" id="cardContainer"></div>
+        Card Modal
+        <div id="modal" class="modal-overlay" onclick="closeModal()">
+          <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Game Image" />
+            <h2 id="modalTitle"></h2>
+            <div id="modalCategory" class="modal-category"></div>
+            <p id="modalDesc"></p>
+            <button class="view-events-btn" onclick="viewEvents()">
+              View Events
+            </button>
+          </div>
+        </div> -->
+    </section>
+
+    <!-- Upcomming Events Section -->
+    <section class="upcoming-events">
+      <p class="upcoming-events-title">
+        <i class="bx bx-timer bx-lg"></i>Upcoming Events
+      </p>
+
+      <div class="event-cards-container">
+        <div class="event-cards-wrapper" id="event-cards"></div>
+      </div>
+
+      <!-- Modal -->
+      <div class="event-modal hidden" id="eventModal">
+        <div class="event-modal-content">
+          <span class="modal-close" id="closeModal">&times;</span>
+          <div class="modal-flex">
+            <img id="modalImage" src="" alt="Event Image" />
+            <div class="modal-info">
+              <h2 id="modalTitle"></h2>
+
+              <div id="modalCountdown">
+                <span>
+                  <p id="day">00</p>
+                  Days
+                </span>:
+                <span>
+                  <p id="hour">00</p>
+                  Hours
+                </span>:
+                <span>
+                  <p id="minute">00</p>
+                  Minutes
+                </span>:
+                <span>
+                  <p id="second">00</p>
+                  Seconds
+                </span>
+              </div>
+
+              <div class="pricing">
+                <p class="pricing-title">Participation Price:</p>
+                <ul>
+                  <li>
+                    Individual:<br />
+                    ₹ <strong><span id="priceIndividual"></span></strong>
+                  </li>
+                  <li>
+                    Team (4 People):<br />
+                    ₹ <strong><span id="priceTeam"></span></strong>
+                  </li>
+                </ul>
+              </div>
+              <div class="prize-details">
+                <p class="prize-details-title">Prizes:</p>
+                <p id="modalPrize"></p>
+              </div>
+              <button id="joinEventBtn">Join Event</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overlay for notifications -->
+      <div class="popup-overlay hidden" id="popupOverlay">
+        <div class="popup-message" id="popupMessage"></div>
+      </div>
+    </section>
+
+    <!-- Registration  Section -->
+    <section class="registration-section" id="registration">
+      <p class="upcoming-events-title"><i class='bx  bx-user-plus bx-lg'></i> Register Here</p>
+      <div class="section-container">
+        <div class="left-container">
+          <div class="left-container-title">
+            <p class="registration-title">
+              You are here at the right place, let your game shine! through
+              YoungGod's
+            </p>
+          </div>
+        </div>
+        <div class="right-container">
+          <div class="form-header">
+            <p class="form-header-title">
+              Fill out the form to register yourself
+              <strong style="color: cadetblue">@younggod's</strong>!
+            </p>
+            <p class="form-header-description">
+              All the fields are required, please fill them out completely.
+            </p>
+
+            <div id="toast-container">
+              <p class="toast"></p>
+            </div>
+          </div>
+
+          <form action="/register" class="form-container" id="multiStepForm" novalidate>
+            <!-- Step 1 -->
+            <div class="form-step active">
+              <div class="form-inputs">
+                <input type="text" name="Full Name" id="fullName" placeholder="John Doe" required />
+              </div>
+              <div class="form-inputs">
+                <input type="email" name="Email" id="email" placeholder="example123@gmail.com" autocomplete="email"
+                  required />
+              </div>
+              <div class="form-inputs">
+                <input type="tel" name="contact" id="contact" placeholder="+91 95485 62178" autocomplete="tel"
+                  required />
+              </div>
+
+              <div class="form-inputs">
+                <button type="button" class="next-btn" onclick="nextStep()">
+                  Next
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="form-step">
+              <div class="form-inputs">
+                <select name="Game" class="game-preference" required>
+                  <option value="">Choose Game</option>
+                  <option value="BGMI">BGMI</option>
+                  <option value="Free Fire">Free Fire</option>
+                </select>
+              </div>
+              <div class="form-inputs">
+                <select name="Role" id="role">
+                  <option value="">Select Your Role</option>
+                  <option value="IGL">In Game Leader</option>
+                  <option value="Sniper">Sniper</option>
+                  <option value="Rusher">Rusher</option>
+                  <option value="Support">Support</option>
+                </select>
+              </div>
+
+              <div class="form-inputs">
+                <input type="text" name="InGameName" id="inGameName" placeholder="Your In-Game Name" required />
+              </div>
+              <div class="form-inputs">
+                <input type="text" name="UniqueID" id="uniqueID" placeholder="Your Unique ID" required />
+              </div>
+              <div class="form-inputs">
+                <input type="text" name="TeamName" id="teamName" placeholder="Team Name (optional)" />
+              </div>
+              <div class="form-inputs">
+                <button type="button" class="prev-btn" onclick="prevStep()">
+                  Prev
+                </button>
+                <button type="button" class="next-btn" onclick="nextStep()">
+                  Next
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="form-step">
+              <div class="form-inputs">
+                <input type="password" name="password" id="password" placeholder="Enter your password" required />
+              </div>
+              <div class="form-inputs">
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm your password"
+                  required />
+
+              </div>
+              <div class="form-inputs">
+                <div class="otp-Form">
+                  <p class="otpSubheading">
+                    We have sent a verification code to your email
+                  </p>
+                  <div class="inputContainer">
+                    <input maxlength="1" type="text" class="otp-input" id="otp-input1" required />
+                    <input maxlength="1" type="text" class="otp-input" id="otp-input2" required />
+                    <input maxlength="1" type="text" class="otp-input" id="otp-input3" required />
+                    <input maxlength="1" type="text" class="otp-input" id="otp-input4" required />
+                  </div>
+                  <button type="button" class="verifyButton" onclick="verifyOTP()">Verify</button>
+
+                  <p class="resendNote">
+                    Didn't receive the code?
+                    <button type="button" class="resendBtn" id="resend-btn" disabled>
+                      Resend Code (<span id="timer">30</span>s)
+                    </button>
+                  </p>
+                </div>
+              </div>
+              <div class="form-inputs">
+                <button type="button" class="prev-btn" onclick="prevStep()">
+                  Prev
+                </button>
+                <button type="submit" class="submit-btn" onclick="submitForm(event)">
+                  Submit
+                </button>
+              </div>
+            </div>
+        </div>
+      </div>
+      </form>
+      </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+      <div class="faq-container">
+        <p class="upcoming-events-title"><i class='bx bx-file-details'></i> Frequently Asked Questions</p>
+        <div class="faq-item">
+          <button class="faq-question">
+            When is the last date to register?
+            <span class="arrow">&#9660;</span>
+          </button>
+          <div class="faq-answer">
+            The final deadline to register is <strong>15th June 2025</strong>. Don't miss out!
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Is there any registration fee?
+            <span class="arrow">&#9660;</span>
+          </button>
+          <div class="faq-answer">
+            Nope! It's <span class="highlight">absolutely free</span> to register and play.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Can I update my form after submitting?
+            <span class="arrow">&#9660;</span>
+          </button>
+          <div class="faq-answer">
+            Yes! Use the edit link from your confirmation email to update anytime before the deadline.
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- About -->
+      <div class="footer-section">
+        <h3 class="footer-title">About Us</h3>
+        <p class="footer-text">
+          YoungGod's is an eSports community promoting competitive gaming, events,
+          and talent across multiple platforms.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h3 class="footer-title">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#registration">Register</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#tournaments">Tournaments</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-section">
+        <h3 class="footer-title">Contact</h3>
+        <p>Email: <a href="mailto:younggods@gmail.com">younggods@gmail.com</a></p>
+        <p>Phone: +91 98765 43210</p>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="footer-section">
+        <h3 class="footer-title">Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" target="_blank" aria-label="Instagram" class="icon-link">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="YouTube" class="icon-link">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="Discord" class="icon-link">
+            <i class="fab fa-discord"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 YoungGod's eSports | Built with ❤️ for all the gamers</p>
+    </div>
+  </footer>
+
+
+
+  <script src="script.js"></script>
+  <script src="public/javascript/swipper.js"></script>
+  <script src="public/javascript/validation.js"></script>
+</body>
+
+</html>

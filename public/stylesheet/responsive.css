@@ -1,0 +1,165 @@
+/* Mobile Devices (≤ 600px) */
+@media (max-width: 600px) {
+  main {
+    padding: 10px;
+  }
+
+  .header-item {
+    gap: 20px;
+    padding: 10px 15px;
+    margin-bottom: -20px;
+  }
+
+  .hero-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-title {
+    width: 100%;
+    font-size: 60px;
+    line-height: 68px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+  .hero-btn{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
+  }
+
+  .intro-video {
+    display: none;
+    padding: 10px;
+  }
+  .about-section{
+    padding: 0px 10px;
+  }
+  .about-card-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sideLine{
+    display: none;
+  }
+  .flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .flex>ul{
+    position: relative;
+    left: -10;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .flex-provide-container {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .game-title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .game-description {
+    font-size: 16px;
+  }
+
+  .image-container {
+    display: none;
+    flex-direction: column;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .right-image-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .right-image-container img {
+    width: 48%;
+    height: auto;
+  }
+
+
+  .event-modal{
+    width: 100%;
+  }
+  .event-modal-content{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+  .modal-flex{
+    flex-direction: column;
+  }
+  .modal-flex img{
+    max-width: 350px;
+    height: 250px;
+  }
+  .left-container{
+    display: none;
+  }
+  .form-header{
+    display: none;
+  }
+}
+
+/* Tablets (601px to 991px) */
+@media (min-width: 601px) and (max-width: 991px) {
+  main {
+    padding: 20px 40px;
+  }
+
+  .header-item {
+    gap: 30px;
+    padding: 10px 15px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+    line-height: 55px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+
+  .about-card-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flex-provide-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+  }
+
+  .image-container {
+    flex-direction: column;
+  }
+
+  .image-container img,
+  .right-image-container img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Desktops (≥ 992px) */
+/* Already handled by default styles */
