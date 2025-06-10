@@ -5,6 +5,7 @@
   }
 
   .header-item {
+    width: 100%;
     gap: 20px;
     padding: 10px 15px;
     margin-bottom: -20px;
@@ -16,8 +17,7 @@
   }
 
   .hero-title {
-    width: 100%;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 68px;
   }
 
