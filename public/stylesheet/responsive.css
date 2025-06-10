@@ -56,10 +56,7 @@
     padding: 0px 40px;
   }
 
-  .about-title {
-    line-height: 35px;
-    margin-bottom: 20px;
-  }
+
 
   .hero-btn {
     display: flex;
@@ -125,9 +122,10 @@
     font-size: 16px;
   }
 
-  .game-categories{
+  .game-categories {
     font-size: 0.7rem;
   }
+
   .image-container {
     display: none;
   }
@@ -208,17 +206,28 @@
     margin-bottom: 10px;
 
   }
-  .event-description{
+
+  .event-description {
     margin-bottom: 15px;
   }
-  .event-date{
+
+  .event-date {
     font: 400 0.7rem 'Nunito';
   }
 
   .section-container {
-  background: radial-gradient(circle at top left, #ecf8f313, #002510);
-  padding: 20px;
-}
+    background: radial-gradient(circle at top left, #ecf8f313, #002510);
+    padding: 20px;
+  }
+
+  .provide-title,
+  .upcoming-events-title,
+  .about-title {
+    font-size: 1.6rem;
+    line-height: 35px;
+    margin-bottom: 15px;
+  }
+
   .left-container,
   .form-header {
     display: none;
