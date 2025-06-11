@@ -366,16 +366,16 @@ header {
 }
 
 .event-title {
-  font: 600 1.8rem 'Josefin Sans';
+  font: 600 1.8rem 'Nunito';
   display: flex;
   align-items: center;
   gap: 5px;
   color: white;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .event-date {
-  font: 500 1rem 'Nunito';
+  font: 400 0.9rem 'Nunito';
   color: #4a9974;
   letter-spacing: 1px;
   display: flex;
@@ -384,9 +384,9 @@ header {
 }
 
 .event-description {
-  font: 400 1rem 'Nunito';
+  font: 100 1rem 'Nunito';
   letter-spacing: 1px;
-  color: #d0f0e0;
+  color: #c4f0da;
 
 }
 
@@ -450,7 +450,7 @@ header {
 }
 
 #modalTitle {
-  font: 800 2rem 'Josefin Sans';
+  font: 800 2rem 'Nunito';
   color: #011308;
   margin: 0;
 }
