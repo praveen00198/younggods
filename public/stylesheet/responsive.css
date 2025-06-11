@@ -179,6 +179,7 @@
   }
 
   .modal-flex img {
+    display: none;
     width: 100%;
     max-width: 270px;
     height: 270px;
