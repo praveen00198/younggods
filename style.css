@@ -32,13 +32,46 @@ header {
   list-style: none;
 }
 
-.header-items>a {
-  text-decoration: none;
+.header-items > a {
   color: #ecf8f3;
-  font: 400 16px 'Poppins';
+  font: normal 16px 'Poppins';
+  text-decoration: none;
+}
+.header-items > a:focus {
+  color: #75ddcc;
 }
 
-/* Hero title */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  background: #ecf8f3;
+  border-radius: 2px;
+  transition: 0.4s ease;
+}
+
+/* Hamburger to X transition */
+.menu-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+/* Hero Section */
 .hero-flex {
   display: flex;
   justify-content: space-between;
@@ -105,218 +138,6 @@ header {
   height: 400px;
   border-radius: 20px;
   object-fit: cover;
-}
-
-/* About section */
-.about-section {
-  background-color: #030d0f;
-  margin-top: 40px;
-  padding: 0px 25px;
-  border-radius: 20px;
-  margin-bottom: 60px;
-}
-
-.about-title {
-  font: 700 2rem 'Poppins', sans-serif;
-  color: #dde6e3;
-  padding-top: 20px;
-  margin-bottom: -5px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.about-description {
-  font: 300 16px 'Nunito';
-  color: #ecf8f3;
-  letter-spacing: 1px;
-}
-
-/* about cards */
-.about-card-container {
-  display: flex;
-  gap: 30px;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 40px;
-}
-
-.mission-cards,
-.vision-cards {
-  background-color: #ecf8f317;
-  border: 1px solid #a0a4a5;
-  border-radius: 14px;
-  padding: 10px 20px;
-}
-
-.mission-card-title,
-.vision-card-title {
-  margin-bottom: -10px;
-  font: 600 28px 'josefin sans';
-  color: #4d8b71;
-}
-
-.mission-card-description,
-.vision-card-description {
-  font: 400 16px 'Nunito';
-  line-height: 20px;
-  color: #a7c9bb;
-}
-
-.mission-cards:hover,
-.vision-cards:hover {
-  box-shadow: 0px 0px 8px #37795d;
-}
-
-.work {
-  padding: 20px;
-  width: 100%;
-  /* text-align: center; */
-}
-
-.work-title {
-  font: 700 30px 'Josefin Sans';
-  color: #ecf8f3;
-  padding-top: 10px;
-}
-
-.sideLine {
-  width: 9px;
-  height: 9rem;
-  background-color: #0e4130;
-  border-radius: 20px;
-}
-
-.flex {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex>ul {
-  display: grid;
-  gap: 20px;
-  text-align: left;
-}
-
-.flex>ul>li {
-  font: 300 16px 'Nunito';
-  color: #ecf8f3;
-}
-
-/* Provide section */
-/* General Layout */
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  padding: 1rem;
-}
-
-.provide-title {
-  margin-top: 40px;
-  font: 700 2rem 'Poppins', sans-serif;
-  color: white;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-/* Card Design */
-.game-card {
-  width: 100%;
-}
-
-.flex-provide-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 60px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  margin-bottom: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 12px;
-}
-
-.game-category {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.game-categories {
-  font: 500 14px 'Gruppo';
-  color: #ffffff;
-
-  padding: 6px 15px;
-  background-color: #28834e;
-  border: 1px solid #58a378;
-  border-radius: 30px;
-}
-
-.game-title {
-  font: 700 4rem 'Poppins';
-  color: white;
-  line-height: 4.75rem;
-  margin-bottom: 20px;
-}
-
-.game-description {
-  font: 400 20px 'Nunito';
-  color: white;
-  margin-bottom: 20px;
-  line-height: 25px;
-}
-
-.game-btn {
-  padding: 10px 20px;
-  background-color: #28834e;
-  color: white;
-  border: 1px solid #54a877;
-  border-radius: 6px;
-  font: 500 16px 'system-ui', 'Segoe UI', Helvetica, 'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
-}
-
-.game-btn:hover {
-  background-color: #439665;
-  color: #002510;
-  border-radius: 40px;
-}
-
-.image-container {
-  perspective: 2000px;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-}
-
-.image-container img {
-  width: 60%;
-  height: 450px;
-  border-radius: 12px;
-  overflow: hidden;
-  transform: rotateY(0deg) rotateX(0deg);
-  transition: transform 0.5s ease-in-out;
-}
-
-.right-image-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8px;
-}
-
-.right-image-container img {
-  width: 100%;
-  height: 220px;
 }
 
 
@@ -559,260 +380,7 @@ header {
 }
 
 
-/* /Registration section */
-.registration-section {
-  width: 100%;
-  margin-top: 3rem;
-}
-
-.section-container {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  gap: 20px;
-  background: linear-gradient(to right, cadetblue, #083446, #05613a);
-  padding: 20px 40px;
-  border-radius: 14px;
-}
-
-.left-container,
-.right-container {
-  width: 100%;
-}
-
-.registration-title {
-  font: 700 4rem 'Poppins', sans-serif;
-  color: rgba(255, 255, 255, 0.486);
-  margin: 0;
-}
-
-.right-container {
-  padding: 30px 10px;
-  background-color: #ffffff1e;
-  backdrop-filter: blur(10px);
-  border: 2px solid #ffffff56;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-.form-step {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.form-step.active {
-  display: block;
-  opacity: 1;
-}
-
-form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.form-inputs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-}
-
-form input {
-  padding: 5px 6px;
-  width: 100%;
-  border: none;
-  border-bottom: 1.5px solid #022b22;
-  font: 500 16px 'Nunito';
-  color: #ffffff;
-  outline: none;
-  background-color: transparent;
-  letter-spacing: 0.5px;
-  margin-bottom: 15px;
-}
-
-.form-header {
-  width: 55%;
-}
-
-.form-header-title {
-  font: 500 18px "Josefin Sans";
-  color: rgba(255, 255, 255, 0.603);
-  margin: 0;
-  margin-bottom: 20px;
-  line-height: 23px;
-  text-align: right;
-}
-
-.form-header-description {
-  width: 100%;
-  font: 100 12px "Nunito";
-  color: rgba(255, 255, 255, 0.692);
-  text-align: right;
-}
-
-#toast-container {
-  display: none;
-  margin-top: 10px;
-  background-color: #024b3b;
-  color: white;
-  padding: 10px 15px;
-  margin-bottom: 8px;
-  border-left: 5px solid #024b3b;
-  border-radius: 5px;
-  animation: fadeIn 0.4s ease-in-out;
-  font-size: 14px;
-  font: 500 14px "Nunito";
-}
-
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.form-inputs input[type="file"] {
-  display: none;
-}
-
-.next-btn,
-.prev-btn,
-.submit-btn {
-  margin-top: 30px;
-  width: 100%;
-  background: transparent;
-  border: 1px solid #ffffff56;
-  border-radius: 40px;
-  padding: 10px 20px;
-  color: #ecf8f3;
-  cursor: pointer;
-  font: 400 16px 'Josefin Sans';
-}
-
-.next-btn:hover,
-.prev-btn:hover,
-.submit-btn:hover {
-  background-color: #08462e6b;
-  border-radius: 8px;
-  color: #ecf8f3;
-}
-
-.game-preference,
-#role,
-#device {
-  width: 100%;
-  height: 2rem;
-  background: none;
-  outline: none;
-  border: 1px solid #0025107a;
-  border-radius: 6px;
-  margin-bottom: 10px;
-  font: 500 16px 'Nunito';
-  color: rgb(2, 49, 51);
-}
-
-
-.otp-Form {
-  width: 250px;
-  background-color: rgba(255, 255, 255, 0.212);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 20px 30px;
-  position: relative;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.082);
-  border-radius: 15px;
-  margin-bottom: 20px;
-}
-
-.otpSubheading {
-  margin: 0;
-  font: 500 16px 'Nunito';
-  color: rgb(3, 46, 33);
-}
-
-.inputContainer {
-  margin: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-}
-
-.otp-input {
-  background-color: rgb(228, 228, 228);
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  border: none;
-  border-radius: 7px;
-  caret-color: rgb(127, 129, 255);
-  color: rgb(2, 70, 55);
-  outline: none;
-  font-weight: 600;
-}
-
-.otp-input:focus,
-.otp-input:valid {
-  transition-duration: .3s;
-}
-
-.verifyButton {
-  width: 100%;
-  height: 40px;
-  border: none;
-  background-color: rgb(5, 48, 33);
-  color: white;
-  font: 600 16px 'Josefin Sans';
-  cursor: pointer;
-  border-radius: 20px;
-  transition-duration: .2s;
-}
-
-.verifyButton:hover {
-  background-color: rgba(0, 68, 45, 0.767);
-  transition-duration: .2s;
-}
-
-.resendNote {
-  font: 600 12px 'Nunito';
-  color: rgba(255, 255, 255, 0.582);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.resendBtn {
-  background-color: transparent;
-  border: none;
-  color: rgb(2, 37, 24);
-  cursor: pointer;
-  text-decoration: underline;
-  font: 400 14px 'Josefin Sans';
-}
-
-label {
-  font: 400 14px 'Josefin Sans';
-}
-
-
+/* FAQ Section below */
 .faq-section {
   color: #fff;
   padding: 2rem 0;

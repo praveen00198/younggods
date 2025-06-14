@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Gruppo&family=Italianno&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rancho&family=Savate:ital,wght@0,200..900;1,200..900&family=Send+Flowers&family=WDXL+Lubrifont+SC&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 20px 100px;
+  background-color: #1c2627;
+}
+
+/* /Registration section */
+.registration-section {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.section-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  background: linear-gradient(to right, cadetblue, #083446, #05613a);
+  padding: 20px 40px;
+  border-radius: 14px;
+}
+
+.left-container,
+.right-container {
+  width: 100%;
+}
+
+.registration-title {
+  font: 700 4rem 'Poppins', sans-serif;
+  color: rgba(255, 255, 255, 0.486);
+  margin: 0;
+}
+
+.right-container {
+  padding: 30px 10px;
+  background-color: #ffffff1e;
+  backdrop-filter: blur(10px);
+  border: 2px solid #ffffff56;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.form-step {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form-step.active {
+  display: block;
+  opacity: 1;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+form input {
+  padding: 5px 6px;
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid #022b22;
+  font: 500 16px 'Nunito';
+  color: #ffffff;
+  outline: none;
+  background-color: transparent;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+.form-header {
+  width: 55%;
+}
+
+.form-header-title {
+  font: 500 18px "Josefin Sans";
+  color: rgba(255, 255, 255, 0.603);
+  margin: 0;
+  margin-bottom: 20px;
+  line-height: 23px;
+  text-align: right;
+}
+
+.form-header-description {
+  width: 100%;
+  font: 100 12px "Nunito";
+  color: rgba(255, 255, 255, 0.692);
+  text-align: right;
+}
+
+#toast-container {
+  display: none;
+  margin-top: 10px;
+  background-color: #024b3b;
+  color: white;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-left: 5px solid #024b3b;
+  border-radius: 5px;
+  animation: fadeIn 0.4s ease-in-out;
+  font-size: 14px;
+  font: 500 14px "Nunito";
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-inputs input[type="file"] {
+  display: none;
+}
+
+.next-btn,
+.prev-btn,
+.submit-btn {
+  margin-top: 30px;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #ffffff56;
+  border-radius: 40px;
+  padding: 10px 20px;
+  color: #ecf8f3;
+  cursor: pointer;
+  font: 400 16px 'Josefin Sans';
+}
+
+.next-btn:hover,
+.prev-btn:hover,
+.submit-btn:hover {
+  background-color: #08462e6b;
+  border-radius: 8px;
+  color: #ecf8f3;
+}
+
+.game-preference,
+#role,
+#device {
+  width: 100%;
+  height: 2rem;
+  background: none;
+  outline: none;
+  border: 1px solid #0025107a;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font: 500 16px 'Nunito';
+  color: rgb(2, 49, 51);
+}
+
+
+.otp-Form {
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.212);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 30px;
+  position: relative;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.082);
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.otpSubheading {
+  margin: 0;
+  font: 500 16px 'Nunito';
+  color: rgb(3, 46, 33);
+}
+
+.inputContainer {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.otp-input {
+  background-color: rgb(228, 228, 228);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: none;
+  border-radius: 7px;
+  caret-color: rgb(127, 129, 255);
+  color: rgb(2, 70, 55);
+  outline: none;
+  font-weight: 600;
+}
+
+.otp-input:focus,
+.otp-input:valid {
+  transition-duration: .3s;
+}
+
+.verifyButton {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: rgb(5, 48, 33);
+  color: white;
+  font: 600 16px 'Josefin Sans';
+  cursor: pointer;
+  border-radius: 20px;
+  transition-duration: .2s;
+}
+
+.verifyButton:hover {
+  background-color: rgba(0, 68, 45, 0.767);
+  transition-duration: .2s;
+}
+
+.resendNote {
+  font: 600 12px 'Nunito';
+  color: rgba(255, 255, 255, 0.582);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.resendBtn {
+  background-color: transparent;
+  border: none;
+  color: rgb(2, 37, 24);
+  cursor: pointer;
+  text-decoration: underline;
+  font: 400 14px 'Josefin Sans';
+}
+
+label {
+  font: 400 14px 'Josefin Sans';
+}

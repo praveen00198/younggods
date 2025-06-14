@@ -1,7 +1,7 @@
 /* RESET + Base Styles *
 
 /* Mobile Devices (≤ 600px) */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   * {
     margin: 0;
     padding: 0;
@@ -20,7 +20,9 @@
   main {
     padding: 10px;
   }
-
+  .nav-menu{
+    display: none;
+  }
   .header-item {
     width: 100%;
     display: flex;
@@ -29,6 +31,31 @@
     padding: 10px 15px;
     margin-bottom: 20px;
   }
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #1b1b2f;
+    z-index: 1000;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .nav-menu.show {
+    display: block;
+  }
+
+
 
   .hero-section {
     width: 100%;
