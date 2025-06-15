@@ -26,6 +26,7 @@ main {
   display: flex;
   align-items: center;
   gap: 15px;
+  margin-bottom: 15px;
 }
 
 /* Card Design */
@@ -55,7 +56,6 @@ main {
 .game-categories {
   font: 500 14px 'Gruppo';
   color: #ffffff;
-
   padding: 6px 15px;
   background-color: #28834e;
   border: 1px solid #58a378;

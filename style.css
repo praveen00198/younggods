@@ -56,11 +56,14 @@ header {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  padding: 5px 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 5px;
+  background-color: #01160d;
 }
 .logo-title{
-  font: 500 1rem 'WDXL Lubrifont SC';
+  font: 500 1.3rem 'WDXL Lubrifont SC';
   color: #ecf8f3;
 }
 /* Hero Section */

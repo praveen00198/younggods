@@ -14,7 +14,7 @@
   }
 
   main {
-    padding:0px 15px;
+    padding: 20px 10px;
   }
 
   .nav-menu {
@@ -27,7 +27,7 @@
     flex-direction: column;
     gap: 20px;
     position: absolute;
-    top: 60px;
+    top: 45px;
     left: 0;
     z-index: 2000;
     border-radius: 0px;
@@ -86,6 +86,7 @@
 
   .about-section {
     padding: 0 10px;
+    background-color: transparent;
   }
 
   .mission-card-title,
@@ -125,10 +126,10 @@
   .flex-provide-container {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    gap: 20px;
   }
-
+  .flex-game-container{
+    padding: 15px 10px;
+  }
   .game-title {
     font-size: 2rem;
     line-height: 2.5rem;

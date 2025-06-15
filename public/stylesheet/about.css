@@ -14,7 +14,6 @@ main {
 /* About section */
 .about-section {
   background-color: #030d0f;
-  margin-top: 40px;
   padding: 0px 25px;
   border-radius: 20px;
   margin-bottom: 60px;
@@ -75,6 +74,7 @@ main {
 .work {
   padding: 20px;
   width: 100%;
+  margin-top: 20px;
   /* text-align: center; */
 }
 
