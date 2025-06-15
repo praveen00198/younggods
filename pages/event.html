@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YoungGod : An E-Sports</title>
 
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="/public/stylesheet/responsive.css" />
     <link rel="stylesheet" href="/public/stylesheet/event.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
   <body>
     <main>
       <!-- Header section -->
       <header>
-        <nav>
+        <nav class="nav-menu">
           <ul class="header-item">
             <li class="header-items"><a href="../index.html">Home</a></li>
             <li class="header-items"><a href="about.html">About Us</a></li>
@@ -30,6 +35,62 @@
       </header>
 
       <!-- Main event listing section -->
+      <section class="event-filtering">
+        <div class="filter-event-container">
+          <div class="primary-filter">
+            <button
+              name="all"
+              class="primary-event-btn"
+              value="all"
+              id="btn-all"
+            >
+              All
+            </button>
+            <button
+              name="upcoming"
+              class="primary-event-btn"
+              value="upcoming"
+              id="btn-upcoming"
+            >
+              Upcoming
+            </button>
+            <button
+              name="completed"
+              class="primary-event-btn"
+              value="completed"
+              id="btn-completed"
+            >
+              Completed
+            </button>
+          </div>
+
+          <div class="secondary-filter">
+            <div class="search-box">
+              <input
+                type="text"
+                placeholder="Search Events"
+                class="search-input"
+              />
+              <i class="bx bx-search" onclick="searchEvents()"></i>
+            </div>
+
+            <div class="filter-btn">
+              <i class="bx bx-filter-alt"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="event-listing">
+        <!-- All Events -->
+        <div class="all-events">Hey All</div>
+
+        <!-- Upcoming Events -->
+        <div class="upcoming-events" hidden>Hey Upcoming</div>
+
+        <!-- Completed Events -->
+        <div class="completed-events" hidden>Hey Completed</div>
+      </section>
     </main>
 
     <!-- Footer -->
@@ -92,6 +153,6 @@
     </footer>
 
     <!-- Scripts -->
-     
+    <script src="/public/javascript/event.js"></script>
   </body>
 </html>

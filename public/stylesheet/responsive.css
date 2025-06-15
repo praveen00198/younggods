@@ -1,7 +1,7 @@
 /* RESET + Base Styles *
 
 /* Mobile Devices (≤ 600px) */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   * {
     margin: 0;
     padding: 0;
