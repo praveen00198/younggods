@@ -1,5 +1,3 @@
-/* RESET + Base Styles *
-
 /* Mobile Devices (≤ 600px) */
 @media (max-width: 600px) {
   * {
@@ -12,23 +10,20 @@
   html {
     width: 100%;
     overflow-x: hidden;
-    /* Kill horizontal scroll */
     font-family: sans-serif;
-    /* Set default font */
   }
 
   main {
     padding: 10px;
   }
-  .nav-menu{
+
+  /* .nav-menu{
     display: none;
-  }
+  } */
+
   .header-item {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
     margin-bottom: 20px;
   }
   .menu-toggle {
