@@ -44,10 +44,10 @@ header {
 /* Menu Toggle */
 .menu-toggle {
   display: none;
-  z-index: 1000;
   cursor: pointer;
   color: white;
-  font-size: 40px;
+  font-size: 35px;
+  margin: 0;
 }
 
 /* For mobile */
@@ -59,11 +59,11 @@ header {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
-  padding-right: 5px;
+  padding-right: 10px;
   background-color: #01160d;
 }
 .logo-title{
-  font: 500 1.3rem 'WDXL Lubrifont SC';
+  font: 500 1.5rem 'WDXL Lubrifont SC';
   color: #ecf8f3;
 }
 /* Hero Section */
