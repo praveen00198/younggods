@@ -1,11 +1,15 @@
 // ========== For navigation bar ==========
-const menuToggle = document.getElementById("menu-toggle");
-const navMenu = document.getElementById("nav-menu");
-
-menuToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("show");
-  menuToggle.classList.toggle("open");
+const menu = document.querySelector('.header-item');
+function toggleMenu() {
+  menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+}
+const list = document.querySelectorAll('.header-items');
+list.forEach((item) => {
+  item.addEventListener('click', () =>{
+    menu.style.display = 'none';
+  });
 });
+
 
 
 // Faq Accordion

@@ -41,48 +41,41 @@ header {
   color: #75ddcc;
 }
 
+/* Menu Toggle */
 .menu-toggle {
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 28px;
-  height: 20px;
+  z-index: 1000;
   cursor: pointer;
-  z-index: 1001;
+  color: white;
+  font-size: 24px;
 }
 
-.menu-toggle span {
-  display: block;
-  height: 3px;
-  background: #ecf8f3;
-  border-radius: 2px;
-  transition: 0.4s ease;
+/* For mobile */
+.for-mobile{
+  display: none;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 230px;
+  padding: 5px 15px;
 }
-
-/* Hamburger to X transition */
-.menu-toggle.open span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+.logo-title{
+  font: 500 1rem 'WDXL Lubrifont SC';
+  color: #ecf8f3;
 }
-.menu-toggle.open span:nth-child(2) {
-  opacity: 0;
-}
-.menu-toggle.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
-
 /* Hero Section */
 .hero-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  margin-top: 25px;
   margin-bottom: 60px;
 }
 
 .hero-title {
   width: 400px;
-  font: 800 80px 'WDXL Lubrifont SC';
+  font: 800 80px 'Poppins';
   color: #ffffff;
   margin-bottom: -5px;
 }

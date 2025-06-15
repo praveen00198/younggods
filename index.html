@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="public/stylesheet/responsive.css" />
     <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
       rel="stylesheet"
     />
     <link
@@ -29,7 +29,7 @@
     <main>
       <!-- Header Section -->
       <header>
-        <nav class="nav-menu">
+        <nav id="nav-menu">
           <ul class="header-item">
             <li class="header-items"><a href="#">Home</a></li>
             <li class="header-items">
@@ -43,8 +43,13 @@
           </ul>
         </nav>
 
-        <div class="menu-toggle" id="menu-toggle">
-          <i class='bxr  bx-dots-vertical-rounded'  ></i>  
+        <div class="for-mobile">
+          <div class="logo-text">
+            <p class="logo-title">Young God's</p>
+          </div>
+          <div class="menu-toggle" id="menu-toggle" onclick="toggleMenu()">
+            <i class="bx bx-dots-vertical-rounded"></i>
+          </div>
         </div>
       </header>
 

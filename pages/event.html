@@ -21,7 +21,7 @@
     <main>
       <!-- Header section -->
       <header>
-        <nav class="nav-menu">
+        <nav>
           <ul class="header-item">
             <li class="header-items"><a href="../index.html">Home</a></li>
             <li class="header-items"><a href="about.html">About Us</a></li>
@@ -32,6 +32,15 @@
             </li>
           </ul>
         </nav>
+
+        <div class="for-mobile">
+          <div class="logo-text">
+            <p class="logo-title">Young God's</p>
+          </div>
+          <div class="menu-toggle" id="menu-toggle" onclick="toggleMenu()">
+            <i class="bx bx-dots-vertical-rounded"></i>
+          </div>
+        </div>
       </header>
 
       <!-- Main event listing section -->
@@ -154,5 +163,6 @@
 
     <!-- Scripts -->
     <script src="/public/javascript/event.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>

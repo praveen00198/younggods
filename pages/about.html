@@ -5,83 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YoungGod : An E-Sports</title>
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../public/stylesheet/about.css">
+    <link rel="stylesheet" href="../public/stylesheet/about.css" />
     <link rel="stylesheet" href="../public/stylesheet/responsive.css" />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
-    <header>
-      <nav>
-        <ul class="header-item">
-          <li class="header-items"><a href="../index.html">Home</a></li>
-          <li class="header-items"><a href="about.html">About Us</a></li>
-          <li class="header-items"><a href="games.html">Games</a></li>
-          <li class="header-items"><a href="event.html">Events</a></li>
-          <li class="header-items"><a href="registration.html">Register</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- About Section -->
-    <section class="about-section" id="about">
-      <p class="about-title">
-        <i class="bx bx-spreadsheet bx-md"></i>About YoungGod's
-      </p>
-      <p class="about-description">
-        At YoungGod we provide a platform where you can unleash your gaming
-        talent and compete with others, show your gaming moves and chase glory
-        in the world of competitive gaming. Join the ultimate eSports platform
-        where you can register, build your team, and battle in thrilling
-        tournaments.
-      </p>
-
-      <div class="about-card-container">
-        <div class="mission-cards">
-          <p class="mission-card-title">Our mission</p>
-          <p class="mission-card-description">
-            Empowering gamers to connect, compete, and showcase talents in
-            eSports through an inclusive platform for team building,
-            tournaments, and growth, fostering fair play, community engagement,
-            and opportunities for players of all skill levels.
-          </p>
-        </div>
-
-        <div class="vision-cards">
-          <p class="vision-card-title">Our vision</p>
-          <p class="vision-card-description">
-            To be a global eSports leader, uniting gamers across boundaries to
-            form teams, rivalries, and future champions. We aim to nurture a
-            vibrant ecosystem with competitive integrity, innovation, and a
-            strong sense of belonging.
-          </p>
-        </div>
-      </div>
-
-      <div class="work">
-        <p class="work-title">What we do? At Young God's</p>
-        <div class="flex">
-          <div class="sideLine"></div>
-          <ul>
-            <li>
-              <strong>Register and Compete:</strong> Players can sign up,
-              receive a unique ID, and participate in competitive eSports
-              tournaments.
-            </li>
-            <li>
-              <strong>Team Building:</strong> We enable users to register their
-              teams, invite teammates, and manage their squads for various
-              tournaments.
-            </li>
-            <li>
-              <strong>Tournament Access:</strong> Players can view upcoming,
-              ongoing, and past tournaments, register their teams, and stay
-              updated on match schedules.
+      <header>
+        <nav>
+          <ul class="header-item">
+            <li class="header-items"><a href="../index.html">Home</a></li>
+            <li class="header-items"><a href="about.html">About Us</a></li>
+            <li class="header-items"><a href="games.html">Games</a></li>
+            <li class="header-items"><a href="event.html">Events</a></li>
+            <li class="header-items">
+              <a href="registration.html">Register</a>
             </li>
           </ul>
+        </nav>
+
+        <div class="for-mobile">
+          <div class="logo-text">
+            <p class="logo-title">Young God's</p>
+          </div>
+          <div class="menu-toggle" id="menu-toggle" onclick="toggleMenu()">
+            <i class="bx bx-dots-vertical-rounded"></i>
+          </div>
         </div>
-      </div>
-    </section>
+      </header>
+
+      <!-- About Section -->
+      <section class="about-section" id="about">
+        <p class="about-title">
+          <i class="bx bx-spreadsheet bx-md"></i>About YoungGod's
+        </p>
+        <p class="about-description">
+          At YoungGod we provide a platform where you can unleash your gaming
+          talent and compete with others, show your gaming moves and chase glory
+          in the world of competitive gaming. Join the ultimate eSports platform
+          where you can register, build your team, and battle in thrilling
+          tournaments.
+        </p>
+
+        <div class="about-card-container">
+          <div class="mission-cards">
+            <p class="mission-card-title">Our mission</p>
+            <p class="mission-card-description">
+              Empowering gamers to connect, compete, and showcase talents in
+              eSports through an inclusive platform for team building,
+              tournaments, and growth, fostering fair play, community
+              engagement, and opportunities for players of all skill levels.
+            </p>
+          </div>
+
+          <div class="vision-cards">
+            <p class="vision-card-title">Our vision</p>
+            <p class="vision-card-description">
+              To be a global eSports leader, uniting gamers across boundaries to
+              form teams, rivalries, and future champions. We aim to nurture a
+              vibrant ecosystem with competitive integrity, innovation, and a
+              strong sense of belonging.
+            </p>
+          </div>
+        </div>
+
+        <div class="work">
+          <p class="work-title">What we do? At Young God's</p>
+          <div class="flex">
+            <div class="sideLine"></div>
+            <ul>
+              <li>
+                <strong>Register and Compete:</strong> Players can sign up,
+                receive a unique ID, and participate in competitive eSports
+                tournaments.
+              </li>
+              <li>
+                <strong>Team Building:</strong> We enable users to register
+                their teams, invite teammates, and manage their squads for
+                various tournaments.
+              </li>
+              <li>
+                <strong>Tournament Access:</strong> Players can view upcoming,
+                ongoing, and past tournaments, register their teams, and stay
+                updated on match schedules.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Footer -->
     <footer class="footer">
@@ -143,6 +157,6 @@
     </footer>
 
     <!-- Scripts -->
-     
+    <script src="../script.js"></script>
   </body>
 </html>

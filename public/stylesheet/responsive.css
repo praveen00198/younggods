@@ -14,42 +14,35 @@
   }
 
   main {
-    padding: 10px;
-  }
-
-  /* .nav-menu{
-    display: none;
-  } */
-
-  .header-item {
-    width: 100%;
-    /* padding: 10px 15px; */
-    margin-bottom: 20px;
-  }
-  .menu-toggle {
-    display: flex;
+    padding: 15px;
   }
 
   .nav-menu {
+    width: 100%;
+  }
+
+  .header-item {
     display: none;
     width: 100%;
+    flex-direction: column;
+    gap: 20px;
     position: absolute;
     top: 60px;
     left: 0;
-    background-color: #1b1b2f;
-    z-index: 1000;
+    z-index: 2000;
+    border-radius: 0px;
+    background-color: #1c2627;
   }
-
-  .nav-menu ul {
-    flex-direction: column;
-    padding: 15px;
-    gap: 15px;
+  .header-items{
+    font-size: 28px;
   }
-
-  .nav-menu.show {
+  
+  .menu-toggle {
     display: block;
   }
-
+  .for-mobile{
+    display: flex;
+  }
 
 
   .hero-section {
@@ -90,6 +83,7 @@
   .banner-image {
     display: none;
   }
+
   .about-section {
     padding: 0 10px;
   }
