@@ -1,15 +1,29 @@
 // ========== For navigation bar ==========
-const menu = document.querySelector('.header-item');
-function toggleMenu() {
-  menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
-}
-const list = document.querySelectorAll('.header-items');
+const menu = document.querySelector(".header-item");
+const menuBtn = document.getElementById("menu-btn");
+const list = document.querySelectorAll(".header-items");
+const body = document.querySelector("body");
+
+menuBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  menu.style.display = (menu.style.display === "block") ? "none" : "block";
+});
+
 list.forEach((item) => {
-  item.addEventListener('click', () =>{
-    menu.style.display = 'none';
+  item.addEventListener("click", (e) => {
+    e.stopPropagation();
+    menu.style.display = "none";
   });
 });
 
+body.addEventListener("click", () => {
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  }
+});
+menu.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
 
 
 // Faq Accordion
@@ -22,6 +36,3 @@ document.querySelectorAll(".faq-question").forEach((btn) => {
     arrow.classList.toggle("rotate");
   });
 });
-
-
-
