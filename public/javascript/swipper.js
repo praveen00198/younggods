@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const joinEventBtn = document.getElementById("joinEventBtn");
 
   let selectedEvent = null;
-  let countdownInterval; // GLOBAL for clearing old interval
+  let countdownInterval;
 
   events.forEach((event) => {
     const card = document.createElement("div");

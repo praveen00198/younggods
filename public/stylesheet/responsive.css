@@ -25,7 +25,6 @@
     display: none;
     width: 100%;
     flex-direction: column;
-    gap: 20px;
     position: absolute;
     top: 60px;
     left: 0;
@@ -34,8 +33,9 @@
     border-radius: 0px;
     background-color: #1c2627;
   }
-  .header-items{
-    font-size: 28px;
+  .header-items > a{
+    font-size: 20px;
+    padding: 10px 0px;
   }
   
   .menu-toggle {
