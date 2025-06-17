@@ -21,7 +21,7 @@ main {
 
 .game-section-title {
   margin-top: 40px;
-  font: 700 2rem 'Poppins', sans-serif;
+  font: 600 2rem 'Poppins', sans-serif;
   color: white;
   display: flex;
   align-items: center;
@@ -41,7 +41,7 @@ main {
   padding: 30px 60px;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 12px;
 }
@@ -63,14 +63,14 @@ main {
 }
 
 .game-title {
-  font: 700 4rem 'Poppins';
+  font: 600 4rem 'Poppins';
   color: white;
   line-height: 4.75rem;
   margin-bottom: 20px;
 }
 
 .game-description {
-  font: 400 20px 'Nunito';
+  font: 400 16px 'Poppins';
   color: white;
   margin-bottom: 20px;
   line-height: 25px;
@@ -82,7 +82,7 @@ main {
   color: white;
   border: 1px solid #54a877;
   border-radius: 6px;
-  font: 500 16px 'system-ui', 'Segoe UI', Helvetica, 'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font: 500 16px 'Poppins';
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
 }

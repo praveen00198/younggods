@@ -20,7 +20,7 @@ main {
 }
 
 .about-title {
-  font: 700 2rem 'Poppins', sans-serif;
+  font: 600 2rem 'Poppins', sans-serif;
   color: #dde6e3;
   padding-top: 20px;
   margin-bottom: -5px;
@@ -30,7 +30,7 @@ main {
 }
 
 .about-description {
-  font: 300 16px 'Nunito';
+  font: 400 0.9rem 'Poppins';
   color: #ecf8f3;
   letter-spacing: 1px;
 }
@@ -55,7 +55,7 @@ main {
 .mission-card-title,
 .vision-card-title {
   margin-bottom: -10px;
-  font: 600 28px 'josefin sans';
+  font: 800 28px 'Nunito';
   color: #4d8b71;
 }
 
@@ -75,11 +75,10 @@ main {
   padding: 20px;
   width: 100%;
   margin-top: 20px;
-  /* text-align: center; */
 }
 
 .work-title {
-  font: 700 30px 'Josefin Sans';
+  font: 600 30px 'Poppins';
   color: #ecf8f3;
   padding-top: 10px;
 }
@@ -105,6 +104,6 @@ main {
 }
 
 .flex>ul>li {
-  font: 300 16px 'Nunito';
+  font: 400 14px 'Poppins';
   color: #ecf8f3;
 }
