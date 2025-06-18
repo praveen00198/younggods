@@ -6,15 +6,10 @@ body {
   box-sizing: border-box;
 }
 
-main {
-  padding: 20px 100px;
-  background-color: #1c2627;
-}
-
 /* /Registration section */
 .registration-section {
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .section-container {
@@ -35,7 +30,6 @@ main {
 .registration-title {
   font: 700 4rem 'Poppins', sans-serif;
   color: rgba(255, 255, 255, 0.486);
-  margin: 0;
 }
 
 .right-container {
@@ -262,4 +256,10 @@ form input {
 
 label {
   font: 400 14px 'Josefin Sans';
+}
+
+.para p {
+  display: none;
+  font: 400 16px 'Poppins';
+  color: #ffffff;
 }

@@ -259,6 +259,10 @@
   .form-header {
     display: none;
   }
+
+  .para p {
+    display: block;
+  }
 }
 
 /* Tablets (601px to 991px) */
