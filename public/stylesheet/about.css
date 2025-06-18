@@ -13,8 +13,9 @@ main {
 
 /* About section */
 .about-section {
+  margin-top: 35px;
   background-color: #030d0f;
-  padding: 0px 25px;
+  padding: 0.5px 25px;
   border-radius: 20px;
   margin-bottom: 60px;
 }

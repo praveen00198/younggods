@@ -74,7 +74,6 @@ header {
   align-items: center;
   gap: 20px;
   margin-top: 25px;
-  margin-bottom: 60px;
 }
 
 .hero-title {
@@ -139,13 +138,12 @@ header {
 
 
 /* Upcoming Events Section*/
-.upcoming-events-title {
+.section-title {
   font: 600 2rem 'Poppins';
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 20px;
-  color: white;
+  color: #bdf5de;
   letter-spacing: 1px;
 }
 

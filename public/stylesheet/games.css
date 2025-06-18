@@ -70,10 +70,11 @@ main {
 }
 
 .game-description {
-  font: 400 16px 'Poppins';
+  font: 400 1rem 'Poppins';
   color: white;
   margin-bottom: 20px;
   line-height: 25px;
+  letter-spacing: 1px;
 }
 
 .game-btn {
