@@ -28,7 +28,7 @@ body {
 }
 
 .registration-title {
-  font: 700 4rem 'Poppins', sans-serif;
+  font: 800 4rem 'Poppins', sans-serif;
   color: rgba(255, 255, 255, 0.486);
 }
 
@@ -86,7 +86,7 @@ form input {
 }
 
 .form-header-title {
-  font: 500 18px "Josefin Sans";
+  font: 500 18px "Nunito";
   color: rgba(255, 255, 255, 0.603);
   margin: 0;
   margin-bottom: 20px;
@@ -96,7 +96,7 @@ form input {
 
 .form-header-description {
   width: 100%;
-  font: 100 12px "Nunito";
+  font: 200 12px "Nunito";
   color: rgba(255, 255, 255, 0.692);
   text-align: right;
 }
@@ -236,7 +236,7 @@ form input {
 }
 
 .resendNote {
-  font: 600 12px 'Nunito';
+  font: 500 12px 'Nunito';
   color: rgba(255, 255, 255, 0.582);
   width: 100%;
   display: flex;
@@ -251,15 +251,76 @@ form input {
   color: rgb(2, 37, 24);
   cursor: pointer;
   text-decoration: underline;
-  font: 400 14px 'Josefin Sans';
+  font: 400 14px 'Nunito';
 }
 
 label {
-  font: 400 14px 'Josefin Sans';
+  font: 400 14px 'Nunito';
 }
 
 .para p {
   display: none;
-  font: 400 16px 'Poppins';
+  font: 400 14px 'Poppins';
   color: #ffffff;
+}
+
+.termsNdConditions {
+  margin-top: 60px;
+  font-family: "Poppins", 'Sans-serif';
+}
+
+.accordion {
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.accordion-item {
+  border: 1px solid #333;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.accordion-header {
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  color: #f1f1f1;
+  letter-spacing: 1px;
+}
+
+
+
+.accordion-body {
+  padding: 1rem;
+  display: none;
+  animation: fadeIn 0.3s ease-in-out;
+  color: #f1f1f1;
+}
+
+.accordion-item.active .accordion-body {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.icon {
+  transition: transform 0.3s;
+}
+
+.accordion-item.active .icon {
+  transform: rotate(90deg);
 }

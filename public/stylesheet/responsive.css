@@ -32,9 +32,10 @@
     border: none;
     border-radius: 0px;
     background-color: #1c2627;
+    text-align: center;
   }
-  .header-items > a{
-    font-size: 20px;
+  .header-items{
+    font-size: 28px;
     padding: 10px 0px;
   }
   
@@ -244,7 +245,7 @@
 
   .section-container {
     background: radial-gradient(circle at top left, #ecf8f313, #002510);
-    padding: 20px;
+    padding: 0px;
   }
 
   .provide-title,
