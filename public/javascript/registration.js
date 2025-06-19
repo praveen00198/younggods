@@ -152,8 +152,6 @@ function startResendTimer() {
     }
   }, 1000);
 }
-
-// Call this after sending OTP initially or on successful resend
 startResendTimer();
 
 // Optional: Add click event to resend OTP when allowed
@@ -167,6 +165,8 @@ document.getElementById("resend-btn").addEventListener("click", () => {
   }
 });
 
+
+// Terms and conditions - Accordion
 const items = document.querySelectorAll(".accordion-item");
 
 items.forEach((item) => {

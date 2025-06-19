@@ -36,7 +36,7 @@ body {
   padding: 30px 10px;
   background-color: #ffffff1e;
   backdrop-filter: blur(10px);
-  border: 2px solid #ffffff56;
+  border: 2px solid #dadada;
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -284,12 +284,12 @@ label {
 .accordion-header {
   padding: 1rem;
   cursor: pointer;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 500;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: background-color 0.3s ease;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
   color: #f1f1f1;
   letter-spacing: 1px;
 }
