@@ -245,7 +245,7 @@
 
   .section-container {
     background: radial-gradient(circle at top left, #ecf8f313, #002510);
-    padding: 0px;
+    padding: 15px;
   }
 
   .provide-title,
