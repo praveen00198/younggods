@@ -1,3 +1,4 @@
+
 // ========== For navigation bar ==========
 const menu = document.querySelector(".header-item");
 const menuBtn = document.getElementById("menu-btn");

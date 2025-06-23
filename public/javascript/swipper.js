@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Garena Free Fire",
       description: "Fast-paced survival shooter for Indian gamers.",
       category: "Shooter",
-      time: "2025-06-05T18:00:00",
+      time: "2025-06-08T18:00:00",
       priceIndividual: 100,
       priceTeam: 400,
       prize:
@@ -94,13 +94,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   closeModal.addEventListener("click", () => {
     modal.classList.add("hidden");
-    clearInterval(countdownInterval); // Stop countdown when modal is closed
+    // clearInterval(countdownInterval);
   });
 
   window.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.classList.add("hidden");
-      clearInterval(countdownInterval);
+      // clearInterval(countdownInterval);
     }
     if (e.target === popupOverlay) popupOverlay.classList.add("hidden");
   });
